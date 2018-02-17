@@ -54,8 +54,8 @@ class convert:
         return convert.bytes_to_number( b64decode(b64_string) )
     @staticmethod
     def number_to_text(number):
-        number = format(number, 'x')
-        return number.decode("hex")
+        number = format(int(number), 'x')
+        return str(number).decode("hex")
 
 def fileParser(path):
         from Crypto.PublicKey import RSA
