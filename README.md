@@ -1,5 +1,15 @@
 # ModernCryptoLib
 Python cryptography library
+# AutoRSA 
+```
+Commands:
+- run (Executes the attack)
+- run plain (Returns Plain text)
+- run hex (Returns hex)
+- info (Print informations)
+```
+
+# API
 ```
 [-] N = Rsa modulus
 [-] E = Rsa exponent
