@@ -54,10 +54,7 @@ class convert:
         return convert.bytes_to_number( b64decode(b64_string) )
     @staticmethod
     def number_to_text(number):
-        if "L" in number:
-            number = number.replace("L","")
-        number = number.replace("0x","")
-        number = hex(int(number))
+        number = format(number, 'x')
         return number.decode("hex")
 
 def fileParser(path):
