@@ -32,15 +32,15 @@ common_modulus_menu = '''
  [-][2] Attack Requirments:
  [*] 0-> Chipher text 1 		 {0}
  [*] 1-> Chipher text 2 		 {1}
- [*] 2-> Exponent 1			 	 {2}
- [*] 3-> Exponent 2			 	 {3}
- [*] 4-> Modulus 	 			 {4}
+ [*] 2-> Exponent 1			 {2}
+ [*] 3-> Exponent 2			 {3}
+ [*] 4-> Modulus 	 		 {4}
  [!] USEGE : n=value'''
 hasted_menu = '''
  [-][4] Attack Requirments:
- [*] 0-> Exponent 1			 {0}
- [*] 1-> Exponent 2			 {1}
- [*] 2-> Exponent 3			 {2}
+ [*] 0-> Exponent 1		 {0}
+ [*] 1-> Exponent 2		 {1}
+ [*] 2-> Exponent 3		 {2}
  [*] 3-> Chipher text 1 	 {3}
  [*] 4-> Chipher text 2 	 {4}
  [*] 5-> Chipher text 3 	 {5}
@@ -51,7 +51,7 @@ fermet_menu = '''
  [!] USEGE : n=value'''
 wiener_menu = '''
  [-][5] Attack Requirments:
- [*] 0-> Modulus	 	{0}
+ [*] 0-> Modulus	{0}
  [*] 1-> Exponent	{1}
  [!] USEGE : n=value'''
 attack_menu = '''
@@ -96,7 +96,8 @@ while(1):
 						user_change_value = raw_input(curser)
 						if user_change_value == "99":
 							break
-
+						if user_change_value.lower() == "run":
+							print "[#] run hex \n [#] run plain"
 						if user_change_value.lower() == "run plain":
 							try:
 								print "[#] Solution(Plain Text) : " + str(RSA.convert.number_to_text(RSA.attacks.Chinese_remainder_theorem(long(args[0]),long(args[1]),long(args[2]),long(args[3]),long(args[4]))))
@@ -125,6 +126,8 @@ while(1):
 						user_change_value = raw_input(curser)
 						if user_change_value == "99":
 							break
+						if user_change_value.lower() == "run":
+							print "[#] run hex \n [#] run plain"
 						if user_change_value.lower() == "run plain":
 							try:
 								print "[#] Solution(Plain Text) : " + str(RSA.convert.number_to_text(RSA.attacks.Common_modulus(long(args[0]),long(args[1]),long(args[2]),long(args[3]),long(args[4]))))
@@ -176,6 +179,8 @@ while(1):
 						user_change_value = raw_input(curser)
 						if user_change_value == "99":
 							break
+						if user_change_value.lower() == "run":
+							print "[#] run hex \n [#] run plain"
 						if user_change_value.lower() == "run plain":
 							try:
 								print "[#] Solution(Plain Text) : " + str(RSA.convert.number_to_text(RSA.attacks.hasted(long(args[0]),long(args[1]),long(args[2]),long(args[3]),long(args[4]),long(args[5]))))
