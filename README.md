@@ -29,6 +29,7 @@ RSA->Attacks->Hasted-->hasted(n1,n2,n3,chipher_text_1,chipher_text_2,chipher_tex
 RSA->Attacks->Wiener-->wiener(n,e)
 RSA->Attacks->Fermat-->fermat(n,limit)
 RSA->Attacks->factordb-->factordb(n)
+     |_ https://factordb.com/
 RSA->Attacks->side_channel-->Gen_sideChannel_payload(n,c,e)
 RSA->Attacks->side_channel-->Reverse_sideChannel_payload(payload)
 RSA->Attacks->Common_modulus-->common_modulus(chipher_text_1, chipher_text_2, e1, e2, n)
