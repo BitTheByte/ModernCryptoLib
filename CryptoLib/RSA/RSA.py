@@ -60,7 +60,7 @@ class convert:
         number = format(int(number), 'x')
         return str(number).decode("hex")
 
-def fileParser(path):
+def KeyParser(path):
         from Crypto.PublicKey import RSA
         return RSA.importKey(open(path, "r").read())
 class export:
