@@ -35,8 +35,10 @@ class attacks:
         return reverse_sideChannel_payload(payload)
     @staticmethod
     def factordb(n):
-        from RSA_Attacks.factordb import factordb
-        return factordb(n)
+        from RSA_Attacks.factordb import FactorDB
+        f =  FactorDB(n)
+        f.connect()
+        return f.get_factor_list()
 
 class calculate:
     @staticmethod
