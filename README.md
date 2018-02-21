@@ -39,4 +39,11 @@ RSA->fileParser(path)
 RSA->export-->public_key(n,e)
 RSA->export-->private_key(n,e,d,p,q)
 ```
-
+# TO-DO
+- full documentation
+- finish aes attacks module
+- rename 'bytes_to_number' to 'hex_to_number'
+- add more feature to AutoRsa script
+- set standard return value for all functions instand of dictionaries, str and arrays
+- clean the code
+- eat breakfast
