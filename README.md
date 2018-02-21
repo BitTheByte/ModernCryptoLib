@@ -35,7 +35,8 @@ RSA->Attacks->Common_modulus-->common_modulus(chipher_text_1, chipher_text_2, e1
 RSA->convert-->bytes_to_number(data_bytes)
 RSA->convert-->base64_to_number(b64_string)
 RSA->convert-->number_to_text(number)
-RSA->fileParser(path)
+RSA->KeyParser(path)
+     |_ https://www.dlitz.net/software/pycrypto/api/current/Crypto.PublicKey.RSA-module.html
 RSA->export-->public_key(n,e)
 RSA->export-->private_key(n,e,d,p,q)
 ```
