@@ -1,4 +1,6 @@
 pycrypto
-
+requests
 sym
 cryptography
+bs4
+lxml
