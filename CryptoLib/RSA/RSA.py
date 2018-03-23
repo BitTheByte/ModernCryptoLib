@@ -20,9 +20,9 @@ class attacks:
         return wiener(n,e)
 
     @staticmethod
-    def Hasted(n1,n2,n3,chipher_text_1,chipher_text_2,chipher_text_3):
+    def Hasted(n1,n2,n3,chipher_text_1,chipher_text_2,chipher_text_3,e):
         from RSA_Attacks.hasted import hasted
-        return hasted(n1,n2,n3,chipher_text_1,chipher_text_2,chipher_text_3)
+        return hasted(n1,n2,n3,chipher_text_1,chipher_text_2,chipher_text_3,e)
 
     @staticmethod
     def Gen_sideChannel_payload(n,c,e):
