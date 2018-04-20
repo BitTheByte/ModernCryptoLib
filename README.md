@@ -8,6 +8,17 @@ $ sudo python setup.py install
 ```python
 from CryptoLib.RSA import RSA
 ```
+# Example
+```python
+n = 3233
+e = 17
+c = 855 #(123 ** e) % n
+factordb = RSA.attacks.factordb(n)
+q = factordb[0]
+p = factordb[1]
+d = RSA.utilities.modinv(e,780)
+print "Decrypted Message : {}".format(pow(c,d,n))
+```
 
 # ~~AutoRSA (Pre-Alpha)~~
 AutoRSA Canceled.  
