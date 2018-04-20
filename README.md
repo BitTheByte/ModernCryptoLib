@@ -1,13 +1,17 @@
 # ModernCryptoLib
 Python cryptography library
-# AutoRSA (Pre-Alpha) (Unstable)
+# How to install
+```bash
+$ sudo python setup.py install
 ```
-Commands:
-- run (Executes the attack)
-- run plain (Returns Plain text)
-- run hex (Returns hex)
-- info (Print informations)
+# Initialization
+```python
+from CryptoLib.RSA import *
 ```
+
+# ~~AutoRSA (Pre-Alpha)~~
+AutoRSA Canceled.  
+Another automation attack tools is coming soon
 
 # API
 ```
@@ -32,17 +36,17 @@ RSA->Attacks->factordb-->factordb(n)
 RSA->Attacks->side_channel-->Gen_sideChannel_payload(n,c,e)
 RSA->Attacks->side_channel-->Reverse_sideChannel_payload(payload)
 RSA->Attacks->Common_modulus-->common_modulus(chipher_text_1, chipher_text_2, e1, e2, n)
-RSA->convert-->bytes_to_number(data_bytes)
-RSA->convert-->base64_to_number(b64_string)
-RSA->convert-->number_to_text(number)
+RSA->convert-->hex_to_decimal(data_bytes)
+RSA->convert-->base64_to_decimal(b64_string)
+RSA->convert-->decimal_to_text(number)
 RSA->KeyParser(path)
      |_ https://www.dlitz.net/software/pycrypto/api/current/Crypto.PublicKey.RSA-module.html
 RSA->export-->public_key(n,e)
 RSA->export-->private_key(n,e,d,p,q)
 ```
 # TO-DO
-- full documentation
-- finish aes attacks module
-- add more feature to AutoRsa script
-- set standard return value for all functions instand of dictionaries, str and arrays
-- clean the code
+- Full documentation
+- Finish aes attacks module
+- Set standard return value for all functions instand of dictionaries, str and arrays
+- Add Multi-prime RSA attacks
+- Clean the code
