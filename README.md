@@ -14,7 +14,6 @@ Commands:
 [-] N = Rsa modulus
 [-] E = Rsa exponent
 [-] C = Cipher text
-
 [*] Import MAP
 RSA->Attacks->utillities-->egcd(a,b)
 RSA->Attacks->utillities-->modinv(a,m)
@@ -44,10 +43,6 @@ RSA->export-->private_key(n,e,d,p,q)
 # TO-DO
 - full documentation
 - finish aes attacks module
-- rename 'bytes_to_number' to 'hex_to_decimal'
-- rename 'base64_to_number' to 'base64_to_decimal'
-- rename 'number_to_text' to 'decimal_to_text'
 - add more feature to AutoRsa script
 - set standard return value for all functions instand of dictionaries, str and arrays
 - clean the code
-- eat breakfast
