@@ -7,7 +7,6 @@ $ sudo python setup.py install
 # Initialization
 ```python
 from CryptoLib.RSA import RSA
-print RSA.example()
 ```
 
 # ~~AutoRSA (Pre-Alpha)~~
