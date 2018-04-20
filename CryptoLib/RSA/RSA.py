@@ -1,3 +1,40 @@
+class utilities:
+	@staticmethod
+	def egcd(a,b):
+		from RSA_Attacks.utilities import egcd
+		return egcd(a,b)
+	@staticmethod
+	def modinv(a,m):
+		from RSA_Attacks.utilities import modinv
+		return modinv(a,m)
+	@staticmethod
+	def mulinv(a,b):
+		from RSA_Attacks.utilities import mulinv
+		return  mulinv(a,b)
+	@staticmethod
+	def powinv(x,n):
+		from RSA_Attacks.utilities import powinv
+		return powinv(x,n)
+	@staticmethod
+	def rational_to_contfrac (x, y):
+		from RSA_Attacks.utilities import rational_to_contfrac
+		return rational_to_contfrac (x, y)
+	@staticmethod
+	def convergents_from_contfrac(frac):    
+		from RSA_Attacks.utilities import convergents_from_contfrac
+		return convergents_from_contfrac
+	@staticmethod
+	def contfrac_to_rational (frac):
+		from RSA_Attacks.utilities import contfrac_to_rational
+		return contfrac_to_rational (frac)
+	@staticmethod
+	def is_perfect_square(n):
+		from RSA_Attacks.utilities import is_perfect_square
+		return is_perfect_square(n)
+	@staticmethod
+	def isqrt(n):
+		from RSA_Attacks.utilities import isqrt
+		return isqrt(n)
 class attacks:
     @staticmethod
     def Fermat(n,limit=9999):
