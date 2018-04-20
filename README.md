@@ -43,6 +43,8 @@ RSA->KeyParser(path)
      |_ https://www.dlitz.net/software/pycrypto/api/current/Crypto.PublicKey.RSA-module.html
 RSA->export-->public_key(n,e)
 RSA->export-->private_key(n,e,d,p,q)
+RSA->calculate-->d(p,q,e)
+RSA->calculate-->phi(p,q)
 ```
 # TO-DO
 - Full documentation
