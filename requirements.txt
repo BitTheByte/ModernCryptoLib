@@ -2,3 +2,4 @@ pycrypto
 requests
 sym
 cryptography
+sympy
