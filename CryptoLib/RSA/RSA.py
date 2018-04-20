@@ -51,14 +51,14 @@ class calculate:
 
 class convert:
     @staticmethod
-    def bytes_to_number(data_bytes):
+    def hex_to_decimal(data_bytes):
         return long(data_bytes,16)
     @staticmethod
-    def base64_to_number(b64_string):
+    def base64_to_decimal(b64_string):
         from base64 import b64decode
-        return convert.bytes_to_number( b64decode(b64_string) )
+        return convert.hex_to_decimal( b64decode(b64_string) )
     @staticmethod
-    def number_to_text(number):
+    def decimal_to_text(number):
         number = format(int(number), 'x')
         return str(number).decode("hex")
 
