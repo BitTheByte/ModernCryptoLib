@@ -42,7 +42,7 @@ class attacks:
         return fermat(n,limit)
     @staticmethod
     def multiPrime(primes_array,n,e,c):
-        from RSA_Attacks.fermet import multiPrime
+        from RSA_Attacks.multiPrime import multiPrime
         return multiPrime(primes_array,n,e,c)
     @staticmethod
     def Common_modulus(chipher_text_1, chipher_text_2, e1, e2, n):
