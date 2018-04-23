@@ -42,6 +42,7 @@ RSA->utilities-->contfrac_to_rational (frac)
 RSA->Attacks->Hasted-->hasted(n1,n2,n3,chipher_text_1,chipher_text_2,chipher_text_3,e)
 RSA->Attacks->Wiener-->wiener(n,e)
 RSA->Attacks->Fermat-->fermat(n,limit)
+RSA->Attacks->multiPrime-->multiPrime(primes_array,n,e,c)
 RSA->Attacks->factordb-->factordb(n)
      |_ https://factordb.com/
 RSA->Attacks->side_channel-->Gen_sideChannel_payload(n,c,e)
@@ -61,5 +62,5 @@ RSA->calculate-->phi(p,q)
 - Full documentation
 - Finish aes attacks module
 - Set standard return value for all functions instand of dictionaries, str and arrays
-- Add Multi-prime RSA attacks
+- ~~Add Multi-prime RSA attacks~~
 - Clean the code
