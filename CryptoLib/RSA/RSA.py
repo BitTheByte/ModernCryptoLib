@@ -40,7 +40,10 @@ class attacks:
     def Fermat(n,limit=9999):
         from RSA_Attacks.fermet import fermat
         return fermat(n,limit)
-
+    @staticmethod
+    def multiPrime(primes_array,n,e,c):
+        from RSA_Attacks.fermet import multiPrime
+        return multiPrime(primes_array,n,e,c)
     @staticmethod
     def Common_modulus(chipher_text_1, chipher_text_2, e1, e2, n):
         from RSA_Attacks.common_modulus import common_modulus
