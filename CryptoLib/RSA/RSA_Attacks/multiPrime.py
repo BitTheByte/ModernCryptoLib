@@ -1,7 +1,7 @@
 from utilities import egcd,modinv
 
 def multiPrime(primes_array,n,e,c):
-    primes = []
+    primes = primes_array
     ts = []
     xs = []
     ds = []
