@@ -42,6 +42,7 @@ RSA->utilities-->contfrac_to_rational (frac)
 RSA->Attacks->Hasted-->hasted(n1,n2,n3,chipher_text_1,chipher_text_2,chipher_text_3,e)
 RSA->Attacks->Wiener-->wiener(n,e)
 RSA->Attacks->Fermat-->fermat(n,limit)
+RSA->Attacks->Chinese_remainder_theorem-->Chinese_remainder_theorem(p,q,dp,dq,chipher_text)
 RSA->Attacks->multiPrime-->multiPrime(primes_array,n,e,c)
 RSA->Attacks->factordb-->factordb(n)
      |_ https://factordb.com/
