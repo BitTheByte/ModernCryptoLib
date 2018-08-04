@@ -1,5 +1,7 @@
 # ModernCryptoLib
 Python cryptography library
+# Current version
+0.0.11
 # How to install
 ```bash
 $ sudo python setup.py install
