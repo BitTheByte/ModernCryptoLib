@@ -86,8 +86,8 @@ class calculate:
         return (p - 1) * (q -1)
     @staticmethod
     def d(p,q,e):
-        from RSA_Attacks.utilities import egcd
-        return egcd(e,calculate.phi(p,q))[1]
+        from RSA_Attacks.utilities import modinv
+        return modinv(e,calculate.phi(p,q))
 
 class convert:
     @staticmethod
