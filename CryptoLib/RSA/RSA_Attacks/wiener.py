@@ -16,7 +16,7 @@ def __helper(N,E,c):
         if x1*x2 == N:
         	return {'q':x1,'p':x2}
         else:
-        	return {'q':None,'p':None}
+            return {'q':None,'p':None}
     else:
         return {'q':None,'p':None}
             
@@ -26,5 +26,7 @@ def wiener(N,E) :
 	C = SquareAndMultiply(testStr, E, N)
 	for c in DivergentsComputation(DevContinuedFraction(E, N)) :
 		if SquareAndMultiply(C, c[1], N) == testStr :
-		    return __helper(N,E,c)
+		    pq = __helper(N,E,c)
+		    pq.update({'d': c[1]})
+		    return  pq
 	return {'q':None,'p':None}
