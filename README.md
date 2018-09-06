@@ -65,5 +65,6 @@ RSA->calculate-->phi(p,q)
 - Full documentation
 - Finish aes attacks module
 - Set standard return value for all functions instand of dictionaries, str and arrays
+- Add Broadcast Attack
 - ~~Add Multi-prime RSA attacks~~
 - Clean the code
