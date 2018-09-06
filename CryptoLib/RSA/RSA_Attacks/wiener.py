@@ -20,7 +20,7 @@ def __helper(N,E,c):
     else:
         return {'q':None,'p':None}
             
-def Wiener(N,E) :
+def wiener(N,E) :
 	testStr = 42 
 	phi = 0
 	C = SquareAndMultiply(testStr, E, N)
