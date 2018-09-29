@@ -29,4 +29,4 @@ def wiener(N,E) :
 		    pq = __helper(N,E,c)
 		    pq.update({'d': c[1]})
 		    return  pq
-	return {'q':None,'p':None}
+	return {'q':None,'p':None,'d':None}
