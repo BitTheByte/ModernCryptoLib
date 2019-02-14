@@ -22,10 +22,6 @@ d = RSA.utilities.modinv(e,780)
 print "Decrypted Message : {}".format(pow(c,d,n))
 ```
 
-# ~~AutoRSA (Pre-Alpha)~~
-AutoRSA Canceled.  
-Another automation attack tools is coming soon
-
 # API
 ```
 [-] N = Rsa modulus
