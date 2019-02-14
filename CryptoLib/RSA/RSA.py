@@ -41,7 +41,7 @@ class attacks:
         from RSA_Attacks.fermet import fermat
         return fermat(n,limit)
     @staticmethod
-    def multiPrime(primes_array,n,e,c):
+    def MultiPrime(primes_array,n,e,c):
         from RSA_Attacks.multiPrime import multiPrime
         return multiPrime(primes_array,n,e,c)
     @staticmethod
@@ -74,7 +74,7 @@ class attacks:
         from RSA_Attacks.side_channel import reverse_sideChannel_payload
         return reverse_sideChannel_payload(payload)
     @staticmethod
-    def factordb(n):
+    def Factordb(n):
         from RSA_Attacks.factordb import FactorDB
         f =  FactorDB(n)
         f.connect()
