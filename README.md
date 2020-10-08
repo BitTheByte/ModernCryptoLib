@@ -1,5 +1,5 @@
 # ModernCryptoLib
-Cryptography library to automate cryptographic attacks it's main purpose to help CTF players and advanced users 
+ModernCryptoLib is a cryptography library to automate cryptographic attacks.It's main purpose is to help CTF players and advanced users to prevent unauthorized hacks. 
 
 # Current version
 0.0.12
