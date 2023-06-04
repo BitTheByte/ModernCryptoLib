@@ -1,10 +1,10 @@
 import math
 
 
-def DevContinuedFraction(num, denum) :
+def DevContinuedFraction(num, denum):
 	partialQuotients = []
 	divisionRests = []
-	for i in range(int(math.log(denum, 2)/1)) :
+	for _ in range(int(math.log(denum, 2)/1)):
 		divisionRests = num % denum
 		partialQuotients.append(num / denum)
 		num = denum
@@ -41,11 +41,10 @@ def SquareAndMultiply(base,exponent,modulus):
 			result = (result*result*base) % modulus
 	return result
 def egcd(a,b):
-    if a == 0:
-        return (b, 0, 1)
-    else:
-        g, y, x = egcd(b % a, a)
-        return (g, x - (b / a) * y, y)
+	if a == 0:
+		return (b, 0, 1)
+	g, y, x = egcd(b % a, a)
+	return (g, x - (b / a) * y, y)
 def modinv(a,m):
     g, x, y = egcd(a, m)
     if g != 1:
@@ -76,39 +75,32 @@ def powinv(x,n):
         else:
             return mid
     return mid + 1
-def rational_to_contfrac ( x, y):
-    a = x//y
-    if a * y == x:
-        return [a]
-    else:
-        pquotients = rational_to_contfrac(y, x - a * y)
-        pquotients.insert(0, a)
-        return pquotients
+def rational_to_contfrac( x, y):
+	a = x//y
+	if a * y == x:
+		return [a]
+	pquotients = rational_to_contfrac(y, x - a * y)
+	pquotients.insert(0, a)
+	return pquotients
 def convergents_from_contfrac( frac):    
-    convs = [];
-    for i in range(len(frac)):
-        convs.append(contfrac_to_rational(frac[0:i]))
-    return convs
-def contfrac_to_rational ( frac):
-    if len(frac) == 0:
-        return (0,1)
-    elif len(frac) == 1:
-        return (frac[0], 1)
-    else:
-        remainder = frac[1:len(frac)]
-        (num, denom) = contfrac_to_rational(remainder)
-        return (frac[0] * num + denom, num)
+	return [contfrac_to_rational(frac[:i]) for i in range(len(frac))]
+def contfrac_to_rational( frac):
+	if len(frac) == 0:
+		return (0,1)
+	elif len(frac) == 1:
+	    return (frac[0], 1)
+	else:
+		remainder = frac[1:]
+		(num, denom) = contfrac_to_rational(remainder)
+		return (frac[0] * num + denom, num)
 def is_perfect_square( n):
-    h = n & 0xF; 
-    if h > 9:
-        return -1 
-    if ( h != 2 and h != 3 and h != 5 and h != 6 and h != 7 and h != 8 ):
-        t = isqrt(n)
-        if t*t == n:
-            return t
-        else:
-            return -1
-    return -1
+	h = n & 0xF;
+	if h > 9:
+	    return -1
+	if h not in [2, 3, 5, 6, 7, 8]:
+		t = isqrt(n)
+		return t if t*t == n else -1
+	return -1
 def isqrt( n):
     if n == 0:
         return 0

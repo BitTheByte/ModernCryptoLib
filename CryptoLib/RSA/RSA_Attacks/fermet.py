@@ -9,7 +9,4 @@ def fermat(n,limit):
             if b*b == b2:
                 break
         a += 1
-    if a < max:
-        return {'p':a+b , 'q':a-b}
-    else:
-        return False
+    return {'p':a+b , 'q':a-b} if a < max else False
