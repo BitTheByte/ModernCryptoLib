@@ -10,13 +10,10 @@ def __helper(N,E,c):
     b = -(N-phi+1)
     c = N
     delta =b*b - 4*a*c
-    if delta > 0 :
+    if delta > 0:
         x1 = (-b + powinv((b*b - 4*a*c), 2))/(2*a)
         x2 = (-b - powinv((b*b - 4*a*c), 2))/(2*a)
-        if x1*x2 == N:
-        	return {'q':x1,'p':x2}
-        else:
-            return {'q':None,'p':None}
+        return {'q':x1,'p':x2} if x1*x2 == N else {'q':None,'p':None}
     else:
         return {'q':None,'p':None}
             

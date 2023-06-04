@@ -19,7 +19,7 @@ class AESChipher:
             pad = lambda s: s + (16 - len(s) %16) * chr(16 - len(s) % 16)
             return AES.new(key, AES.MODE_CBC, iv).encrypt(pad(plain_text))
         def decrypt(self, chipher_text,key,iv):
-            unpad = lambda s: s[:-ord(s[len(s) - 1:])]
+            unpad = lambda s: s[:-ord(s[-1:])]
             cipher = AES.new(key, AES.MODE_CBC, iv)
             return unpad(cipher.decrypt(chipher_text)).decode('utf8')
         def gen_iv(self):
